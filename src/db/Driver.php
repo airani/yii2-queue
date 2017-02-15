@@ -1,6 +1,6 @@
 <?php
 
-namespace zhuravljov\yii\queue\db;
+namespace yii\queue\db;
 
 use yii\base\BootstrapInterface;
 use yii\db\Connection;
@@ -8,8 +8,8 @@ use yii\db\Query;
 use yii\di\Instance;
 use yii\helpers\Inflector;
 use yii\mutex\Mutex;
-use zhuravljov\yii\queue\Driver as BaseDriver;
-use zhuravljov\yii\queue\Signal;
+use yii\queue\Driver as BaseDriver;
+use yii\queue\Signal;
 
 /**
  * DB Driver

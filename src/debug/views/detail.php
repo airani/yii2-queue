@@ -6,7 +6,7 @@
 
 use yii\helpers\Html;
 use yii\helpers\VarDumper;
-use zhuravljov\yii\queue\Job;
+use yii\queue\Job;
 
 ?>
 <h1>Pushed <?= count($jobs) ?> jobs</h1>

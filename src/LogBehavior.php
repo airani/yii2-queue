@@ -1,6 +1,6 @@
 <?php
 
-namespace zhuravljov\yii\queue;
+namespace yii\queue;
 
 use Yii;
 use yii\base\Behavior;

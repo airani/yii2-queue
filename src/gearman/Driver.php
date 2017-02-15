@@ -1,11 +1,11 @@
 <?php
 
-namespace zhuravljov\yii\queue\gearman;
+namespace yii\queue\gearman;
 
 use yii\base\BootstrapInterface;
 use yii\helpers\Inflector;
-use zhuravljov\yii\queue\Driver as BaseDriver;
-use zhuravljov\yii\queue\Signal;
+use yii\queue\Driver as BaseDriver;
+use yii\queue\Signal;
 
 /**
  * Gearman Driver

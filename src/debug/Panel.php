@@ -1,11 +1,11 @@
 <?php
 
-namespace zhuravljov\yii\queue\debug;
+namespace yii\queue\debug;
 
 use Yii;
 use yii\base\ViewContextInterface;
-use zhuravljov\yii\queue\JobEvent;
-use zhuravljov\yii\queue\Queue;
+use yii\queue\JobEvent;
+use yii\queue\Queue;
 
 /**
  * Class Panel

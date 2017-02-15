@@ -24,23 +24,23 @@ return [
             'database' => 2,
         ],
         'syncQueue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
-            'driver' => \zhuravljov\yii\queue\sync\Driver::class,
+            'class' => \yii\queue\Queue::class,
+            'driver' => \yii\queue\sync\Driver::class,
         ],
         'dbQueue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
+            'class' => \yii\queue\Queue::class,
             'driver' => [
-                'class' => \zhuravljov\yii\queue\db\Driver::class,
+                'class' => \yii\queue\db\Driver::class,
                 'mutex' => \yii\mutex\MysqlMutex::class,
             ],
         ],
         'redisQueue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
-            'driver' => \zhuravljov\yii\queue\redis\Driver::class,
+            'class' => \yii\queue\Queue::class,
+            'driver' => \yii\queue\redis\Driver::class,
         ],
         'amqpQueue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
-            'driver' => \zhuravljov\yii\queue\amqp\Driver::class,
+            'class' => \yii\queue\Queue::class,
+            'driver' => \yii\queue\amqp\Driver::class,
         ],
     ],
 ];

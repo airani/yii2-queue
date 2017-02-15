@@ -1,13 +1,13 @@
 <?php
 
-namespace zhuravljov\yii\queue\redis;
+namespace yii\queue\redis;
 
 use yii\base\BootstrapInterface;
 use yii\di\Instance;
 use yii\helpers\Inflector;
 use yii\redis\Connection;
-use zhuravljov\yii\queue\Driver as BaseDriver;
-use zhuravljov\yii\queue\Signal;
+use yii\queue\Driver as BaseDriver;
+use yii\queue\Signal;
 
 /**
  * Redis Driver

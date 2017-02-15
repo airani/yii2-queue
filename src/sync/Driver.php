@@ -1,10 +1,10 @@
 <?php
 
-namespace zhuravljov\yii\queue\sync;
+namespace yii\queue\sync;
 
 use Yii;
 use yii\base\Application;
-use zhuravljov\yii\queue\Driver as BaseDriver;
+use yii\queue\Driver as BaseDriver;
 
 /**
  * Sync Driver

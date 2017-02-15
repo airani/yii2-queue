@@ -1,8 +1,8 @@
 <?php
 
-namespace zhuravljov\yii\queue\db;
+namespace yii\queue\db;
 
-use zhuravljov\yii\queue\Command as BaseCommand;
+use yii\queue\Command as BaseCommand;
 
 /**
  * Manages application db-queue.

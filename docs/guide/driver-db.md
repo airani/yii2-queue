@@ -10,9 +10,9 @@ return [
     'bootstrap' => ['queue'],
     'components' => [
         'queue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
+            'class' => \yii\queue\Queue::class,
             'driver' => [
-                'class' => \zhuravljov\yii\queue\db\Driver::class,
+                'class' => \yii\queue\db\Driver::class,
                 'db' => 'db', // connection ID
                 'tableName' => '{{%queue}}', // table
                 'channel' => 'default', // queue channel

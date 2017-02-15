@@ -10,9 +10,9 @@ Configuration example:
 return [
     'components' => [
         'queue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
+            'class' => \yii\queue\Queue::class,
             'driver' => [
-                'class' => \zhuravljov\yii\queue\sync\Driver::class,
+                'class' => \yii\queue\sync\Driver::class,
                 'handle' => false, // if tasks should be executed immediately
             ],
         ],

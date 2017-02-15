@@ -1,6 +1,6 @@
 <?php
 
-namespace zhuravljov\yii\queue\amqp;
+namespace yii\queue\amqp;
 
 use Yii;
 use PhpAmqpLib\Channel\AMQPChannel;
@@ -10,8 +10,8 @@ use yii\base\Application;
 use yii\base\BootstrapInterface;
 use yii\base\Event;
 use yii\helpers\Inflector;
-use zhuravljov\yii\queue\Driver as BaseDriver;
-use zhuravljov\yii\queue\Signal;
+use yii\queue\Driver as BaseDriver;
+use yii\queue\Signal;
 
 /**
  * AMQP Driver

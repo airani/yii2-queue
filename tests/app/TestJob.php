@@ -3,7 +3,7 @@
 namespace tests\app;
 
 use yii\base\Object;
-use zhuravljov\yii\queue\Job;
+use yii\queue\Job;
 
 /**
  * Class Job

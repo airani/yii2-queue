@@ -5,7 +5,7 @@ return [
             'class' => \yii\console\controllers\MigrateController::class,
             'migrationPath' => null,
             'migrationNamespaces' => [
-                'zhuravljov\yii\queue\db\migrations',
+                'yii\queue\db\migrations',
             ],
         ],
     ],

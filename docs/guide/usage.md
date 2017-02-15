@@ -12,8 +12,8 @@ return [
     'bootstrap' => ['queue'],
     'components' => [
         'queue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
-            'as log' => \zhuravljov\yii\queue\LogBehavior::class,
+            'class' => \yii\queue\Queue::class,
+            'as log' => \yii\queue\LogBehavior::class,
             'driver' => [], // driver config
         ],
     ],
@@ -30,7 +30,7 @@ Each task which is sent to queue should be defined as a separate class.
 For example, if you need to download and save a file the class may look like the following:
 
 ```php
-class DownloadJob extends Object implements \zhuravljov\yii\queue\Job
+class DownloadJob extends Object implements \yii\queue\Job
 {
     public $url;
     public $file;
@@ -76,7 +76,7 @@ to JSON:
 return [
     'components' => [
         'queue' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
+            'class' => \yii\queue\Queue::class,
             'driver' => [
                 'serializer' => 'json_encode',
             ],
@@ -95,13 +95,13 @@ Configuration example:
 return [
     'components' => [
         'queue1' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
-            'driver' => \zhuravljov\yii\queue\redis\Driver::class,
+            'class' => \yii\queue\Queue::class,
+            'driver' => \yii\queue\redis\Driver::class,
         ],
         'queue2' => [
-            'class' => \zhuravljov\yii\queue\Queue::class,
+            'class' => \yii\queue\Queue::class,
             'driver' => [
-                'class' => \zhuravljov\yii\queue\db\Driver::class,
+                'class' => \yii\queue\db\Driver::class,
                 'serializer' => 'json_encode',
             ],
         ],
@@ -152,7 +152,7 @@ Yii::$app->queue->push(new SomeJob([
 Task class:
 
 ```php
-class SomeJob extends Object implements \zhuravljov\yii\queue\Job
+class SomeJob extends Object implements \yii\queue\Job
 {
     public $userId;
     public $bookId;

@@ -1,9 +1,9 @@
 <?php
 
-namespace zhuravljov\yii\queue\redis;
+namespace yii\queue\redis;
 
 use yii\helpers\Console;
-use zhuravljov\yii\queue\Command as BaseCommand;
+use yii\queue\Command as BaseCommand;
 
 /**
  * Manages application redis-queue.
